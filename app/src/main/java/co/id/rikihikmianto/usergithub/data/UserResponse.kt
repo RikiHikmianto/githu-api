@@ -32,5 +32,9 @@ data class DetailUser(
     @field:SerializedName("following")
     val following: Int,
     @field:SerializedName("public_repos")
-    val repo: Int
+    val repo: Int,
+    @field:SerializedName("location")
+    val location: String,
+    @field:SerializedName("company")
+    val company: String,
 )

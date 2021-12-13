@@ -46,6 +46,18 @@ class DetailActivity : AppCompatActivity() {
                     .into(binding.ivAvatar)
                 binding.tvName.text = it.name
                 binding.tvUsername.text = it.username
+                if (it.company != null) {
+                    binding.tvCompany.text = it.company
+                }
+                else {
+                    binding.tvCompany.text = "No Company"
+                }
+                if (it.location != null) {
+                    binding.tvLocation.text = it.location
+                }
+                else {
+                    binding.tvLocation.text = "No Location"
+                }
                 binding.tvRepo.text = "${it.repo} Repositories"
                 binding.tvFollowers.text = "${it.followers} Followers"
                 binding.tvFollowing.text = "${it.following} Following"
